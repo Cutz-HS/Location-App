@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/earth"
+            android:layout_weight="10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="위도와 경도가 알고 싶은 장소를 입력해주세요."
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="한글 주소를 입력하세요. (XX동, XX역)"
+        android:backgroundTint="#7519d7"
+        android:inputType="text"/>
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_below="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력"
+            android:onClick="bt1"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
